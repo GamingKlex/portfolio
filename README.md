@@ -5,5 +5,5 @@ A simple portfolio where you can display your <b>projects, social links, about y
 </div>
 
 <p align="center">
-    <img src="[path/to/your/image.jpg](https://github.com/GamingKlex/portfolio/blob/master/.github/preview.png)" alt="Preview" width="600"/>
+    <img src="https://github.com/GamingKlex/portfolio/blob/f690b99d3753cf93171c8c469ae5a549bd79f0bc/.github/preview.png" alt="Preview" width="600"/>
 </p>
