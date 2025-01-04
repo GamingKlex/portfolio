@@ -10,7 +10,7 @@ export default {
         mono: ["JetBrains Mono Variable", "monospace"],
       },
       fontSize: {
-        "3.5xl": "2rem",
+        "3_5xl": "2rem",
       },
     },
   },

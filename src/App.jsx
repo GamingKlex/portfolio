@@ -27,7 +27,6 @@ function App() {
     indexRef.current.style.opacity = 0;
     projectRef.current.style.opacity = 0;
     projectRef.current.style.marginTop = "2rem";
-    textRef.current.classList.add("text-3xl", "md:text-3.5xl");
     typewriter(`cd ${id}`, 400, setText);
     setTimeout(() => {
       indexRef.current.style.display = "none";
@@ -50,7 +49,6 @@ function App() {
     indexRef.current.style.opacity = 0;
     aboutRef.current.style.opacity = 0;
     aboutRef.current.style.marginTop = "2rem";
-    textRef.current.classList.add("text-3xl", "md:text-3.5xl");
     typewriter(`cd about`, 400, setText);
     setTimeout(() => {
       indexRef.current.style.display = "none";
@@ -75,7 +73,6 @@ function App() {
     ref.current.style.opacity = 0;
     ref.current.style.marginTop = "2rem";
     textRef.current.style.fontSize = null;
-    textRef.current.classList.remove("text-3xl", "md:text-3.5xl");
     typewriter(`cd ..`, 250, setText);
     setTimeout(() => {
       indexRef.current.style.display = "block";
@@ -108,7 +105,10 @@ function App() {
       <div className="container mx-auto px-5 flex flex-col">
         <div
           ref={textRef}
-          className="mt-40 sm:mt-52 md:mt-60 lg:mt-72 text-2xl flex flex-wrap md:text-3xl lg:text-5xl font-mono font-medium text-black duration-300"
+          className={
+            (page !== "index" ? "!text-xl md:!text-3_5xl" : "") +
+            " mt-40 sm:mt-52 md:mt-60 lg:mt-72 text-2xl flex flex-wrap md:text-3xl lg:text-5xl font-mono font-medium text-black duration-300"
+          }
         >
           <span className={config.titleColor}>{config.title}</span>
           <span className="text-gray-600">@</span>
