@@ -1,7 +1,7 @@
 # <h1 align="center">✨ portfolio ✨</h1>
 
 <div align="center">
-A simple yet <i>godly</i> smooth portfolio page where you can display your <b>projects, social links, about you and more</b>! <a href="">View it in action here!</a>
+A simple yet <i>godly</i> smooth portfolio page where you can display your <b>projects, social links, about you and more</b>! <a href="https://gamingklex.github.io/portfolio/">View it in action here!</a>
 </div>
 <br/>
 <p align="center">
