@@ -21,7 +21,7 @@ function App() {
 
   const navigateToProject = (id) => {
     setPage("project");
-    window.history.pushState({}, "", "/" + id);
+    window.location.hash = "#" + id;
     setProjectId(id);
     window.scrollTo({ top: 0, behavior: "smooth" });
     indexRef.current.style.opacity = 0;
@@ -44,7 +44,7 @@ function App() {
 
   const navigateToAbout = () => {
     setPage("about");
-    window.history.pushState({}, "", "/about");
+    window.location.hash = "#about";
     window.scrollTo({ top: 0, behavior: "smooth" });
     indexRef.current.style.opacity = 0;
     aboutRef.current.style.opacity = 0;
@@ -66,7 +66,7 @@ function App() {
 
   const navigateToIndex = () => {
     setPage("index");
-    window.history.pushState({}, "", "/");
+    window.location.hash = "";
     window.scrollTo({ top: 0, behavior: "smooth" });
     indexRef.current.style.opacity = 0;
     let ref = page === "about" ? aboutRef : projectRef;
@@ -90,9 +90,8 @@ function App() {
   };
 
   useEffect(() => {
-    // Navigate to the project if the URL contains a project ID or the about page
-    const path = window.location.pathname;
-    const id = path.split("/").pop() || null;
+    // Navigate to the project if the hash contains a project ID or the about page
+    let id = window.location.hash.slice(1);
     if (id === "about") {
       navigateToAbout();
     } else if (config.projects.some((project) => project.id === id)) {

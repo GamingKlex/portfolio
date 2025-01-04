@@ -5,6 +5,8 @@ export const config = {
   title: "portfolio", // <-- This is the title of the website
   name: "Lorem", // <-- This is your name
 
+  publicUrl: "https://gamingklex.github.io/portfolio", // This is the URL where your website is hosted
+
   githubUrl: "https://github.com/GamingKlex/portfolio", // This is the URL to the GitHub repository of this page
 
   titleColor: "text-yellow-500",
