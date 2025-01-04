@@ -92,7 +92,7 @@ function App() {
   useEffect(() => {
     // Navigate to the project if the URL contains a project ID or the about page
     const path = window.location.pathname;
-    const id = path.slice(1);
+    const id = path.split("/").pop() || null;
     if (id === "about") {
       navigateToAbout();
     } else if (config.projects.some((project) => project.id === id)) {

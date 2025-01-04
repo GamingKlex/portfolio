@@ -72,7 +72,7 @@ You want this beatiful portfolio for yourself? Great! <br/>
 3. After you've configured everything, you can **deploy the page to GitHub pages**! <br/>
    Just push your changes to your repository and GitHub will automatically deploy the page for you! <br/>
 
-   If you want to deploy the page to a different platform, you can build the page with `npm run build` and then host the `build` folder on your server!
+   If you want to deploy the page to a different platform, you can build the page with `npm run build` and then host the `dist` folder on your server!
 
 4. You may need to enable github pages for github actions in the settings of your repository:
    <img src="https://raw.githubusercontent.com/GamingKlex/portfolio/0d0606085fa0700a2c26bd3100538fae191200cd/.github/pagesFromActions.png" alt="Enable github pages" width="600"/>
