@@ -7,6 +7,9 @@ export const config = {
 
   githubUrl: "https://github.com/GamingKlex/portfolio", // This is the URL to the GitHub repository of this page
 
+  titleColor: "text-yellow-500",
+  nameColor: "text-green-500",
+
   // This is the description that appears below your name
   description: (
     <>
@@ -42,6 +45,11 @@ export const config = {
       tooltip: "lorem@example.com",
     },
   ],
+
+  // The content of the about me page
+  about: `
+The same **markdown** that you use in the project descriptions is supported here as well!
+`,
 
   // Projects that appear in the main section
   //   id: A unique identifier for the project
