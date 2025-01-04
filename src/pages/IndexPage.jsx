@@ -8,7 +8,7 @@ export default function IndexPage({ navigateToProject, navigateToAbout }) {
     <>
       <Basics />
 
-      <div className="mt-12 text-2xl font-mono tracking-tight text-black">
+      <div className="mt-8 md:mt-12 text-lg md:text-xl lg:text-2xl font-mono tracking-tight text-black">
         Read more{" "}
         <button
           className="font-bold underline hover:text-white hover:bg-black duration-100"
@@ -19,7 +19,7 @@ export default function IndexPage({ navigateToProject, navigateToAbout }) {
         or check out my <span className="font-bold">projects</span>:
       </div>
 
-      <div className="mt-12 flex flex-col gap-6">
+      <div className="mt-8 md:mt-12 flex flex-col gap-8 lg:gap-6">
         {config.projects.map((project) => (
           <Project
             key={project.id}
@@ -45,16 +45,18 @@ IndexPage.propTypes = {
 function Basics() {
   return (
     <>
-      <div className="mt-12 text-2xl font-mono tracking-tight text-black">
+      <div className="mt-8 md:mt-12 text-lg md:text-xl lg:text-2xl font-mono tracking-tight text-black">
         Hello! My name is{" "}
         <span className={"font-bold " + config.nameColor}>{config.name}</span>{" "}
         and this is my
         <span className={"font-bold " + config.titleColor}> portfolio</span>.
       </div>
 
-      <div className="mt-12 text-2xl font-mono tracking-tight text-black">
+      <div className="mt-8 md:mt-12 text-lg md:text-xl lg:text-2xl font-mono tracking-tight text-black">
         <p>{config.description}</p>
-        <p className="text-xl mt-2 text-gray-600">{config.subdescription}</p>
+        <p className="text-base md:text-lg lg:text-xl mt-2 text-gray-600">
+          {config.subdescription}
+        </p>
       </div>
     </>
   );

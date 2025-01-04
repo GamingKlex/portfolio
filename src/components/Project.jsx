@@ -5,9 +5,9 @@ export default function Project({ onClick, id, title, description, img }) {
   return (
     <button
       onClick={onClick}
-      className="text-left flex gap-4 items-center group outline-none"
+      className="text-left flex flex-col md:flex-row gap-4 items-center group outline-none"
     >
-      <div className="border-2 border-black bg-transparent w-full max-w-xs relative">
+      <div className="border-2 border-black bg-transparent w-full md:max-w-xs relative">
         <div className="p-5">
           <img className="w-full h-40 object-cover" src={img} alt={title} />
           <div className="mt-4 text-black text-lg font-mono font-bold flex items-center justify-between">
@@ -23,7 +23,7 @@ export default function Project({ onClick, id, title, description, img }) {
         </div>
       </div>
       <div>
-        <div className="text-black text-lg font-mono tracking-tight text-balance">
+        <div className="text-black text-lg font-mono tracking-tight text-balance xl:w-3/4">
           {description}
         </div>
       </div>

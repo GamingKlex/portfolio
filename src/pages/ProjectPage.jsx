@@ -11,14 +11,14 @@ export default function ProjectPage({ projectId, onBack }) {
   return (
     <>
       <button
-        className="mt-12 w-fit flex items-center gap-2 font-bold underline hover:text-white hover:bg-black duration-100"
+        className="mt-8 md:mt-12 w-fit flex items-center gap-2 font-bold underline hover:text-white hover:bg-black duration-100"
         onClick={onBack}
       >
         <ArrowLeft size={24} />
         Go back
       </button>
 
-      <div className="mt-12 text-3xl font-mono font-bold tracking-tight text-black">
+      <div className="mt-12 text-xl md:text-2xl lg:text-3xl font-mono font-bold tracking-tight text-black">
         {project?.title || "Unnamed project"}
       </div>
 

@@ -23,7 +23,7 @@ export default function Footer() {
           ))}
         </div>
       )}
-      <div className="pb-12 mt-16 gap-2.5 flex justify-center text-lg font-mono tracking-tight text-black">
+      <div className="pb-12 mt-16 gap-2.5 flex justify-center text-sm sm:text-base md:text-lg font-mono tracking-tight text-black">
         {config.githubUrl && (
           <>
             <a

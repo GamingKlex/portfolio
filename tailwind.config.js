@@ -9,6 +9,9 @@ export default {
         sans: ["Inter Variable", "sans-serif"],
         mono: ["JetBrains Mono Variable", "monospace"],
       },
+      fontSize: {
+        "3.5xl": "2rem",
+      },
     },
   },
   plugins: [typographyPlugin],
